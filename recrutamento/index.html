@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Recrutamento - Formulário</title>
+    <link rel="stylesheet" href="c13.css" />
+    <link rel="stylesheet" href="c14.css" />
+  </head>
+  <body>
+  <div class="tamanho">
+  <div class="container">
+    <form method="post" action="grafico.html" name="register">
+      <div class="one-third column">
+        <img src="consent.png" alt="logo" id="logo" />
+        <h2 class="welcome">Form</h2>
+        <p class="intro"></p>
+      </div>
+	  </div>
+      <div class="one-third column">
+        <h2>Register</h2>
+          <div class="name">
+            <label for="fullName" class="required">Name:</label>
+            <input type="text" placeholder="write your name" name="fullName" id="fullName" required title="Please enter your name">
+          </div>
+          <div class="email">
+            <label for="email" class="required">Email:</label>
+            <input type="email" placeholder="write your e-mail" name="email" id="email" required>
+          </div>
+          <div class="password">
+            <label for="password" class="required">Password:</label>
+            <input type="password" placeholder="write your password" name="password" id="password" required>
+          </div>
+          <div class="password">
+            <label for="passwordConfirmation" class="required">Conf-Password:</label>
+            <input type="password" placeholder="confirm your password" name="passwordConfirmation" id="passwordConfirmation" required>
+          </div>
+		  <div class="zipCode">
+            <label for="zipCode" class="required">CEP:</label>
+            <input type="text" placeholder="write your CEP" name="zipCode" id="zipCode" required>
+          </div>
+		  <div class="streetName">
+            <label for="streetName" class="required">Street:</label>
+            <input type="text" placeholder="type street name" name="streetName" id="streetName" required>
+          </div>
+		  <div class="number">
+            <label for="number" class="required">Number:</label>
+            <input type="text" placeholder="enter the residence number" name="number" id="number" required>
+          </div>
+		  <div class="complement">
+            <label for="complement" class="required">Complement:</label>
+            <input type="text" placeholder="type your add-on" name="complement" id="complement" required>
+          </div>
+		  <div class="neighbourhood">
+            <label for="neighbourhood" class="required">Neighbourhood:</label>
+            <input type="text" placeholder="enter your neighborhood" name="neighbourhood" id="neighbourhood" required>
+          </div>
+		   <div class="country">
+            <label for="country" class="required">Country:</label>
+            <input type="text" placeholder="enter your country" name="country" id="country" maxlength="3" required>
+			</div>
+			<div class="state">
+            <label for="state" class="required">State:</label>
+            <input type="text" placeholder="enter your state" name="state" id="state" required>
+			</div>
+			<div class="city">
+            <label for="city" class="required">City:</label>
+            <input type="text" placeholder="enter your city" name="city" id="city" required>
+			</div>
+        </fieldset>
+      </div>
+      <div class="one-third column">
+        <h2></h2>
+          <div class="birthDate">
+            <label for="birthDate" class="required">Date of Birth:</label>
+            <input type="date" name="birthDate" id="birthDate" placeholder="yyyy-mm-dd" required>
+            <div id="consent-container" class="hide">
+              <label for="parents-consent">You need a parent's permission to join.
+                Tick here if your child can join:</label>
+              <input type="checkbox" name="parents-consent" id="parents-consent">
+            </div>
+          </div>
+          <div class="bio">
+            <label for="bio">Short Bio (max 140 characters):</label>
+            <textarea name="bio" id="bio" rows="5" cols="30"></textarea>
+            <span id="bio-count" class="hide">140</span>
+          </div>
+          <div class="register"><input type="submit" value="Submit"></div>
+      </div>
+    </form>
+  </div><!-- .container -->
+  <script src="jqueryum.js"></script>
+  <script src="jquerydois.js"></script>
+  <script src="utilidade.js"></script>
+  <script src="placeholder.js"></script>
+  <script src="senha.js"></script>
+  <script src="aniversario.js"></script>
+  <script src="validacao.js"></script>
+  <script src="bio.js"></script>
+
+  </body>
+</html>
